@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon",
     "build": "babel src --out-dir dist --copy-files",
-    "clean": "rimraf dist && rimraf node_modules",
+    "clean": "./node_modules/.bin/.rimraf dist && ./node_modules/.bin/.rimraf node_modules",
     "prod": "npm run clean && npm install && npm run build && npm run pm2 ",
     "pm2": "node ./node_modules/.bin/pm2 reload ecosystem.config.js --env production"
   },
