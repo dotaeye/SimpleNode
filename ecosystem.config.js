@@ -3,7 +3,6 @@ module.exports = {
     {
       name: "simplenode",
       script: "dist/index.js",
-
       // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
       // args: 'one two',
       output: "logs/out.log",
