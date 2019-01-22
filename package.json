@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon",
     "build": "babel src --out-dir dist --copy-files",
-    "pm2": "pm2 startOrRestart ecosystem.config.js --env production",
+    "pm2": "pm2 reload ecosystem.config.js --env production",
     "prod": "npm run pm2"
   },
   "author": "",
